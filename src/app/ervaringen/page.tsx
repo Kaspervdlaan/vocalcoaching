@@ -31,7 +31,7 @@ export default function ErvaringenPage() {
               Wil jij ook aan de slag met je stem?
             </p>
             <Link href="/contact">
-              <button className="bg-gold text-cream font-heading text-lg px-8 py-3 rounded-lg shadow-md hover:bg-red transition-colors cursor-pointer">
+              <button className="bg-blue text-cream font-heading text-lg px-8 py-3 rounded-lg shadow-md hover:bg-red transition-colors cursor-pointer">
                 Boek een les
               </button>
             </Link>

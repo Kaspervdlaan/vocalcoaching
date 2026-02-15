@@ -86,7 +86,7 @@ export default function OverDeLessenPage() {
               </button>
             </Link>
             <Link href="/contact">
-              <button className="bg-gold text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-red transition-colors cursor-pointer w-full sm:w-auto">
+              <button className="bg-red text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-gold transition-colors cursor-pointer w-full sm:w-auto">
                 Of boek meteen een les!
               </button>
             </Link>

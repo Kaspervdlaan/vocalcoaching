@@ -41,7 +41,7 @@ export default function HomePage() {
           />
           <div className="text-center mt-10">
             <Link href="/ervaringen">
-              <button className="bg-gold text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-red transition-colors cursor-pointer">
+              <button className="bg-blue text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-red transition-colors cursor-pointer">
                 Bekijk alle ervaringen
               </button>
             </Link>
