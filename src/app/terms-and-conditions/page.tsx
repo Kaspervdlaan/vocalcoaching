@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Algemene Voorwaarden - Vocal Coaching Utrecht",
-  description: "Algemene voorwaarden voor zanglessen bij Anna Vocal Coaching.",
+  title: "Algemene Voorwaarden",
+  description: "Algemene voorwaarden voor zanglessen bij Anna Vocal Coaching in Utrecht.",
 };
 
 export default function TermsAndConditionsPage() {

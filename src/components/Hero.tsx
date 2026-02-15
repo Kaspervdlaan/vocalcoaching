@@ -77,7 +77,7 @@ export default function Hero() {
             <div className="w-52 h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-2xl">
               <Image
                 src="/assets/anna-bw.png"
-                alt="Anna - Vocal Coach"
+                alt="Anna Day - Zangcoach en vocal coach in Utrecht"
                 width={256}
                 height={256}
                 className="w-full h-full object-cover"

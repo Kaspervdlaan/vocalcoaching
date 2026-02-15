@@ -4,7 +4,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Over Anna - Vocal Coaching Utrecht",
+  title: "Zangcoach Anna - Over mij",
   description: "Leer Anna kennen, zangcoach in Utrecht. Afgestudeerd aan de Nederlandse Popacademie en Vocal Center Academy.",
 };
 
@@ -12,7 +12,7 @@ export default function OverAnnaPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="pt-20 md:pt-20">
+      <div className="pt-16 md:pt-28">
         <div className="max-w-5xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue">
             Over Anna
@@ -50,7 +50,7 @@ export default function OverAnnaPage() {
             <div className="w-full md:w-2/5 flex-shrink-0 order-1 md:order-2">
               <Image
                 src="/assets/anna-bw.png"
-                alt="Anna Day - Vocal Coach"
+                alt="Anna Day - Zangcoach Utrecht bij Vocal Center Academy"
                 width={500}
                 height={600}
                 className="w-full rounded-lg shadow-lg"
@@ -68,7 +68,7 @@ export default function OverAnnaPage() {
             <div className="w-full md:w-2/5 flex-shrink-0">
               <Image
                 src="/assets/anna2.jpg"
-                alt="Anna zingt op podium"
+                alt="Anna zingt op podium - Zangcoach en artiest"
                 width={500}
                 height={600}
                 className="w-full rounded-lg shadow-lg object-cover"

@@ -3,8 +3,8 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Over de Lessen - Vocal Coaching Utrecht",
-  description: "Ontdek hoe zanglessen bij Anna werken. Les op maat, voor elk doel en elk niveau.",
+  title: "Zanglessen Utrecht - Hoe werkt het?",
+  description: "Ontdek hoe zanglessen bij Anna werken. Les op maat, voor elk doel en elk niveau. Holistische zangcoaching in Utrecht.",
 };
 
 export default function OverDeLessenPage() {

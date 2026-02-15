@@ -57,7 +57,7 @@ export default function HomePage() {
             <div className="flex justify-center flex-1 w-56 md:w-64 lg:w-72">
               <Image
                 src="/assets/logo-notext.png"
-                alt="Vocal Coaching Utrecht"
+                alt="Logo Anna Vocal Coaching - Zangles Utrecht"
                 width={350}
                 height={350}
                 className="h-auto"
@@ -156,7 +156,7 @@ export default function HomePage() {
               <div className="mt-8 hidden md:inline-block">
                 <Image
                   src="/assets/logo-light.png"
-                  alt="Vocal Coaching Utrecht"
+                  alt="Anna Vocal Coaching - Logo zangles Utrecht"
                   width={220}
                   height={220}
                   className="h-30 w-auto object-contain"

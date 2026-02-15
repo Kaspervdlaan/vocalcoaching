@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tarieven - Vocal Coaching Utrecht",
+  title: "Prijzen zanglessen Utrecht - Tarieven",
   description: "Bekijk de tarieven voor zanglessen bij Anna in Utrecht. Losse lessen en strippenkaarten beschikbaar.",
 };
 

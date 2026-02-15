@@ -3,6 +3,7 @@ import { EB_Garamond, Proza_Libre } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import PageBackground from "@/components/PageBackground";
+import JsonLd from "@/components/JsonLd";
 import "./globals.css";
 
 const ebGaramond = EB_Garamond({
@@ -24,7 +25,10 @@ const siteUrl =
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Vocalcoaching in Utrecht - Holistische zang",
+  title: {
+    default: "Zangles Utrecht | Holistische Vocal Coaching - Anna",
+    template: "%s | Anna Vocal Coaching Utrecht",
+  },
   description:
     "Zanglessen in Utrecht met Anna. Ontdek de kracht van je stem door holistische zangcoaching. Les op maat voor elk niveau — van beginner tot podium.",
   keywords: "zangles, Utrecht, vocal coaching, holistische zang, zangtechniek",
@@ -72,6 +76,7 @@ export default function RootLayout({
       <body
         className={`${ebGaramond.variable} ${prozaLibre.variable} font-body antialiased`}
       >
+        <JsonLd />
         <Header />
         <main className="pt-24">
           <PageBackground>{children}</PageBackground>

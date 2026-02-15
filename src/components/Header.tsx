@@ -26,7 +26,7 @@ export default function Header() {
         <Link href="/" className="flex items-center h-full py-2">
           <Image
             src="/assets/logo-light.png"
-            alt="Vocal Coaching Utrecht"
+            alt="Anna Vocal Coaching - Logo zangles Utrecht"
             width={80}
             height={80}
             className="h-14 w-auto object-contain md:h-20"

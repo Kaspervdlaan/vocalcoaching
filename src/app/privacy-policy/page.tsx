@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Vocal Coaching Utrecht",
-  description: "Privacyverklaring van Anna Vocal Coaching.",
+  title: "Privacyverklaring",
+  description: "Privacyverklaring van Anna Vocal Coaching. Hoe wij omgaan met je persoonsgegevens.",
 };
 
 export default function PrivacyPolicyPage() {
