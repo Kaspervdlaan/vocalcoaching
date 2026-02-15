@@ -93,7 +93,7 @@ export default function HomePage() {
         </AnimatedSection>
 
         {/* Contact */}
-        <AnimatedSection className="pt-20 md:pt-28 py-16 md:py-24 pb-20 md:pb-28 bg-red overflow-hidden [clip-path:polygon(0_12%,100%_0,100%_88%,0_100%)]">
+        <AnimatedSection className="pt-20 md:pt-28 py-16 md:py-24 pb-20 md:pb-28 bg-red overflow-hidden [clip-path:polygon(0_4%,100%_0,100%_96%,0_100%)] md:[clip-path:polygon(0_12%,100%_0,100%_88%,0_100%)]">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
             {/* Left: text + email + socials. On mobile: content left, logo right */}
