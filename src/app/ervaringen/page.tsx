@@ -12,7 +12,7 @@ export default function ErvaringenPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-cream py-10 md:py-12 border-b border-purple/10">
+      <div className="py-10 md:py-12 border-b border-purple/10">
         <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue mb-2">
             Ervaringen
@@ -21,7 +21,7 @@ export default function ErvaringenPage() {
       </div>
 
       {/* Testimonials */}
-      <AnimatedSection className="pt-8 md:pt-12 pb-16 md:pb-24 bg-cream">
+      <AnimatedSection className="pt-8 md:pt-12 pb-16 md:pb-24">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <TestimonialCarousel showAll />
 

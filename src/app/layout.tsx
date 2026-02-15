@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { EB_Garamond, Proza_Libre } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import PageBackground from "@/components/PageBackground";
 import "./globals.css";
 
 const ebGaramond = EB_Garamond({
@@ -50,7 +51,9 @@ export default function RootLayout({
         className={`${ebGaramond.variable} ${prozaLibre.variable} font-body antialiased`}
       >
         <Header />
-        <main className="pt-24">{children}</main>
+        <main className="pt-24">
+          <PageBackground>{children}</PageBackground>
+        </main>
         <Footer />
       </body>
     </html>

@@ -12,7 +12,7 @@ export default function OverAnnaPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-cream py-10 md:py-12 border-b border-purple/10">
+      <div className="py-10 md:py-12 border-b border-purple/10">
         <div className="max-w-5xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue">
             Over Anna
@@ -21,9 +21,9 @@ export default function OverAnnaPage() {
       </div>
 
       {/* First Section: Intro + Photo (photo right) */}
-      <AnimatedSection className="pt-8 md:pt-12 pb-10 md:pb-14 bg-cream">
+      <AnimatedSection className="pt-8 md:pt-12 pb-10 md:pb-14">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col-reverse md:flex-row items-center gap-12">
             {/* Text */}
             <div className="flex-1 flex flex-col gap-5 order-2 md:order-1">
               <p className="text-purple text-base leading-relaxed">
@@ -61,9 +61,9 @@ export default function OverAnnaPage() {
       </AnimatedSection>
 
       {/* Second Section: Music career + Philosophy (photo left) */}
-      <AnimatedSection className="pt-10 md:pt-14 pb-16 md:pb-24 bg-cream/50">
+      <AnimatedSection className="pt-10 md:pt-14 pb-16 md:pb-24">
         <div className="max-w-5xl mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-12">
+          <div className="flex flex-col-reverse md:flex-row items-center gap-12">
             {/* Second Photo - left */}
             <div className="w-full md:w-2/5 flex-shrink-0">
               <Image

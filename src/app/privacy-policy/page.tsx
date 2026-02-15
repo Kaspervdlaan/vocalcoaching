@@ -9,7 +9,7 @@ export default function PrivacyPolicyPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-cream py-10 md:py-12 border-b border-purple/10">
+      <div className="py-10 md:py-12 border-b border-purple/10">
         <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue">
             Privacyverklaring
@@ -18,7 +18,7 @@ export default function PrivacyPolicyPage() {
       </div>
 
       {/* Content */}
-      <section className="pt-8 md:pt-12 pb-16 bg-cream">
+      <section className="pt-8 md:pt-12 pb-16">
         <div className="max-w-6xl mx-auto px-4 md:px-8 prose-custom">
           <p className="text-purple text-base mb-6">
             Anna Vocal Coaching is verantwoordelijk voor de verwerking van

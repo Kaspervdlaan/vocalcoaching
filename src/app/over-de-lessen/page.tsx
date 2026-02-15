@@ -11,7 +11,7 @@ export default function OverDeLessenPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="bg-cream py-10 md:py-12 border-b border-purple/10">
+      <div className="py-10 md:py-12 border-b border-purple/10">
         <div className="max-w-5xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue mb-2">
             Over de lessen
@@ -20,7 +20,7 @@ export default function OverDeLessenPage() {
       </div>
 
       {/* Content */}
-      <AnimatedSection className="pt-8 md:pt-12 pb-16 md:pb-24 bg-cream">
+      <AnimatedSection className="pt-8 md:pt-12 pb-16 md:pb-24">
         <div className="max-w-5xl mx-auto px-4 md:px-8 flex flex-col gap-6">
           <p className="text-purple text-base leading-relaxed">
             In mijn lessen leer je niet uit een boekje, of volgens een
