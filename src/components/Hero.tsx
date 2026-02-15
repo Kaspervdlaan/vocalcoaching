@@ -12,7 +12,7 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto px-0 md:px-8 w-full py-8 md:py-12">
         <div className="flex flex-col md:flex-row items-center gap-10 md:gap-4">
           {/* Text - full width on mobile with inner padding */}
-          <div className="flex-2 text-left max-w-xl w-full px-6 md:px-0">
+          <div className="flex-2 text-left max-w-xl w-full px-6 md:px-0 pt-4">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}

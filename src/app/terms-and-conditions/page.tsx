@@ -9,7 +9,7 @@ export default function TermsAndConditionsPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="pt-20 md:pt-20">
+      <div className="pt-16 md:pt-28">
         <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue">
             Algemene Voorwaarden
