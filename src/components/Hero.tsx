@@ -17,14 +17,14 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
-              className="w-fit mb-8"
+              className="w-full md:w-fit mb-8"
             >
               <h1
                 className="font-heading text-3xl md:text-4xl lg:text-4xl text-cream mb-4 leading-tight"
               >
                 Vocal Coaching Utrecht
               </h1>
-              <div className="text-right">
+              <div className="text-left md:text-right w-full">
                 <p className="font-heading text-lg md:text-xl text-cream italic">
                   ontdek de kracht van je stem
                 </p>
