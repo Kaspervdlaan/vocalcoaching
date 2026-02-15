@@ -22,14 +22,21 @@ const testimonialPreviews = [
 
 export default function HomePage() {
   return (
-    <>
-      {/* Hero */}
-      <Hero />
+    <div className="relative min-h-screen bg-cream">
+      {/* Full-page background image at 20% opacity */}
+      <div
+        className="fixed inset-0 bg-cover bg-center bg-no-repeat opacity-20 pointer-events-none z-0"
+        style={{ backgroundImage: "url(/assets/bganna.png)" }}
+        aria-hidden
+      />
+      <div className="relative z-10">
+        {/* Hero */}
+        <Hero />
 
-      {/* Testimonials Preview */}
-      <AnimatedSection className="py-20 md:py-28 bg-cream">
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <HomeTestimonialCarousel
+        {/* Testimonials Preview - transparent */}
+        <AnimatedSection className="py-20 md:py-28 mt-20">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
+            <HomeTestimonialCarousel
             snippets={testimonialPreviews.map((item) => item.snippet)}
           />
           <div className="text-center mt-10">
@@ -42,10 +49,10 @@ export default function HomePage() {
         </div>
       </AnimatedSection>
 
-      {/* Waarom vocal coaching? */}
-      <AnimatedSection className="py-16 md:py-24 bg-cream/50">
-        <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row gap-8 md:gap-8 items-center">
+        {/* Waarom vocal coaching? - transparent */}
+        <AnimatedSection className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto px-4 md:px-8">
+            <div className="flex flex-col md:flex-row gap-8 md:gap-8 items-center">
             {/* Left: logo */}
             <div className="flex justify-center flex-1 w-56 md:w-64 lg:w-72">
               <Image
@@ -82,37 +89,42 @@ export default function HomePage() {
               </Link>
             </div>
           </div>
-        </div>
-      </AnimatedSection>
+          </div>
+        </AnimatedSection>
 
-      {/* Contact */}
-      <AnimatedSection className="py-16 md:py-24 bg-cream">
+        {/* Contact */}
+        <AnimatedSection className="pt-20 md:pt-28 py-16 md:py-24 pb-20 md:pb-28 bg-red overflow-hidden [clip-path:polygon(0_12%,100%_0,100%_88%,0_100%)]">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
-            {/* Left: text + email + socials */}
+            {/* Left: text + email + socials. On mobile: content left, logo right */}
             <div className="flex-1 w-full lg:max-w-md">
-            <h2 className="font-heading text-3xl md:text-4xl text-blue mb-10">
-              Contact
-            </h2>
-              <p className="text-purple text-base leading-relaxed mb-4">
-                Heb je een vraag, of wil je direct een proefles inplannen?
-              </p>
-              <p className="text-purple text-base leading-relaxed mb-6">
-                Mail naar{" "}
-                <a
-                  href="mailto:anna@vocalcoachingutrecht.nl"
-                  className="text-blue font-semibold hover:text-gold transition-colors underline"
-                >
-                  anna@vocalcoachingutrecht.nl
-                </a>{" "}
-                of vul het contactformulier in!
-              </p>
+            <div className="flex flex-row md:flex-col gap-6 md:gap-0 items-center md:items-start">
+              {/* Contact text block */}
+              <div className="flex-1 min-w-0">
+                <h2 className="font-heading text-3xl md:text-4xl text-cream mb-4 md:mb-10">
+                  Contact
+                </h2>
+                <p className="text-cream text-base leading-relaxed mb-4">
+                  Heb je een vraag, of wil je direct een proefles inplannen?
+                </p>
+                <p className="text-cream text-base leading-relaxed mb-6">
+                  Mail naar{" "}
+                  <a
+                    href="mailto:anna@vocalcoachingutrecht.nl"
+                    className="text-cream font-semibold hover:text-gold transition-colors underline"
+                  >
+                    anna@vocalcoachingutrecht.nl
+                  </a>{" "}
+                  of vul het contactformulier in!
+                </p>
+              </div>
+            </div>
               <div className="flex gap-4">
                 <a
                   href="https://www.instagram.com/st.annaday/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple hover:text-gold transition-colors"
+                  className="text-cream hover:text-gold transition-colors"
                   aria-label="Instagram"
                 >
                   <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -123,7 +135,7 @@ export default function HomePage() {
                   href="https://open.spotify.com/artist/3KeL7JqPfxjWFSWi5xXgjk?si=6C3j4TXJRSGCw8b1P6p5eQ"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-purple hover:text-gold transition-colors"
+                  className="text-cream hover:text-gold transition-colors"
                   aria-label="Spotify"
                 >
                   <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -132,7 +144,7 @@ export default function HomePage() {
                 </a>
                 <a
                   href="mailto:anna@vocalcoachingutrecht.nl"
-                  className="text-purple hover:text-gold transition-colors"
+                  className="text-cream hover:text-gold transition-colors"
                   aria-label="Email"
                 >
                   <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -141,6 +153,15 @@ export default function HomePage() {
                   </svg>
                 </a>
               </div>
+              <div className="mt-8 hidden md:inline-block">
+                <Image
+                  src="/assets/logo-light.png"
+                  alt="Vocal Coaching Utrecht"
+                  width={220}
+                  height={220}
+                  className="h-30 w-auto object-contain"
+                />
+              </div>
             </div>
             {/* Right: form */}
             <div className="flex-1 w-full min-w-0">
@@ -148,7 +169,8 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </AnimatedSection>
-    </>
+        </AnimatedSection>
+      </div>
+    </div>
   );
 }

@@ -8,11 +8,11 @@ import { motion, AnimatePresence } from "framer-motion";
 import CTAButton from "./CTAButton";
 
 const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/over-de-lessen", label: "Over de lessen" },
-  { href: "/over-anna", label: "Over Anna" },
-  { href: "/tarieven", label: "Tarieven" },
-  { href: "/ervaringen", label: "Ervaringen" },
+  { href: "/", label: "HOME" },
+  { href: "/over-de-lessen", label: "OVER DE LESSEN" },
+  { href: "/over-anna", label: "OVER ANNA" },
+  { href: "/tarieven", label: "TARIEVEN" },
+  { href: "/ervaringen", label: "ERVARINGEN" },
 ];
 
 export default function Header() {
@@ -20,8 +20,8 @@ export default function Header() {
   const pathname = usePathname();
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-purple shadow-lg border-b-2 border-cream/20">
-      <div className="max-w-5xl mx-auto flex items-center justify-between px-4 md:px-8 h-24">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-purple">
+      <div className="max-w-4xl mx-auto flex items-center justify-between px-4 md:px-8 h-26">
         {/* Logo */}
         <Link href="/" className="flex items-center h-full py-2">
           <Image
@@ -29,7 +29,7 @@ export default function Header() {
             alt="Vocal Coaching Utrecht"
             width={80}
             height={80}
-            className="h-14 w-auto object-contain md:h-16"
+            className="h-14 w-auto object-contain md:h-20"
           />
         </Link>
 
@@ -49,7 +49,7 @@ export default function Header() {
               </Link>
             );
           })}
-          <CTAButton variant="header" />
+          {/* <CTAButton variant="header" /> */}
         </nav>
 
         {/* Mobile Menu Button */}
@@ -109,7 +109,7 @@ export default function Header() {
                   </Link>
                 );
               })}
-              <CTAButton variant="header" onClick={() => setMobileOpen(false)} />
+              {/* <CTAButton variant="header" onClick={() => setMobileOpen(false)} /> */}
             </div>
           </motion.nav>
         )}

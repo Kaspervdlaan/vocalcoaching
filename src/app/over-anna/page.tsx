@@ -67,8 +67,8 @@ export default function OverAnnaPage() {
             {/* Second Photo - left */}
             <div className="w-full md:w-2/5 flex-shrink-0">
               <Image
-                src="/assets/hand.png"
-                alt="Vocal coaching"
+                src="/assets/anna2.jpg"
+                alt="Anna zingt op podium"
                 width={500}
                 height={600}
                 className="w-full rounded-lg shadow-lg object-cover"

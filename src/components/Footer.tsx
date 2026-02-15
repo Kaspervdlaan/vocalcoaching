@@ -2,12 +2,12 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue text-cream py-10 md:py-16">
+    <footer className="bg-cream text-purple py-10 md:py-24">
       <div className="max-w-6xl mx-auto px-4 md:px-8">
         {/* Mobile: stack left-aligned. Desktop: single row, bottom-aligned */}
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10 md:gap-16">
           {/* Left: business details */}
-          <div className="text-sm text-cream/90 space-y-6 text-left">
+          <div className="text-sm text-purple/80 space-y-6 text-left">
             <p>Ingeschreven bij handelsregister onder naam: Anna Day</p>
             <p>KVK nummer: 95255419</p>
             <p>BTW-nummer: NL005141377B75</p>
@@ -19,7 +19,7 @@ export default function Footer() {
               href="https://www.instagram.com/st.annaday/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cream hover:text-gold transition-colors"
+              className="text-purple hover:text-gold transition-colors"
               aria-label="Instagram"
             >
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -30,7 +30,7 @@ export default function Footer() {
               href="https://open.spotify.com/artist/3KeL7JqPfxjWFSWi5xXgjk?si=6C3j4TXJRSGCw8b1P6p5eQ"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-cream hover:text-gold transition-colors"
+              className="text-purple hover:text-gold transition-colors"
               aria-label="Spotify"
             >
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
@@ -39,7 +39,7 @@ export default function Footer() {
             </a>
             <a
               href="mailto:anna@vocalcoachingutrecht.nl"
-              className="text-cream hover:text-gold transition-colors"
+              className="text-purple hover:text-gold transition-colors"
               aria-label="Email"
             >
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden>
@@ -51,13 +51,13 @@ export default function Footer() {
 
           {/* Right: legal + copyright, stacked */}
           <div className="flex flex-col md:items-end text-sm space-y-6 text-left md:text-right">
-            <Link href="/terms-and-conditions" className="text-cream hover:text-gold transition-colors">
+            <Link href="/terms-and-conditions" className="text-purple hover:text-gold transition-colors">
               Algemene voorwaarden
             </Link>
-            <Link href="/privacy-policy" className="text-cream hover:text-gold transition-colors">
+            <Link href="/privacy-policy" className="text-purple hover:text-gold transition-colors">
               Privacybeleid
             </Link>
-            <p className="text-cream/80">© Auteursrecht. Alle rechten voorbehouden.</p>
+            <p className="text-purple/70">© Auteursrecht. Alle rechten voorbehouden.</p>
           </div>
         </div>
       </div>

@@ -17,7 +17,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.05, ease: "easeOut" }}
-              className="w-full md:w-fit mb-8"
+              className="w-[85%] md:w-[75%] mb-8 md:mt-8"
             >
               <h1
                 className="font-heading text-3xl md:text-4xl lg:text-4xl text-cream mb-4 leading-tight"

@@ -38,7 +38,7 @@ export default function ContactForm() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="bg-red p-6 md:p-8 rounded-lg shadow-xl max-w-xl mx-auto w-full"
+      className="bg-red p-6 md:p-8 rounded-lg max-w-xl mx-auto w-full"
     >
       <div className="flex flex-col gap-4">
         <div className="flex flex-col gap-1">

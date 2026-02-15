@@ -39,12 +39,20 @@ export default function OverDeLessenPage() {
           </p>
 
           {/* Testimonial quote */}
-          <blockquote className="border-l-4 border-gold pl-6 py-2 my-4 italic text-purple/90 text-base">
+          <blockquote className="border-l-4 text-blue border-gold pl-6 py-2 my-4 w-[60ch] italic text-base">
             &ldquo;Een hele fijne docente met veel kennis, waarmee ze me veel
             heeft geleerd op zanggebied, maar ook op persoonlijke vlakken.&rdquo;
           </blockquote>
 
-          <p className="text-purple text-base leading-relaxed">
+          <div className="flex justify-center">
+            <Link href="/ervaringen">
+              <button className="bg-blue text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-purple transition-colors cursor-pointer w-auto">
+                Lees alle reviews
+              </button>
+            </Link>
+          </div>
+
+          <p className="text-purple text-base leading-relaxed mt-12">
             Misschien wil je zangles omdat het je droom is vocalist te
             worden. Of omdat je voor de klas staat en je stemgebruik wilt
             optimaliseren, of misschien voel je dat je emoties beter geuit
@@ -72,11 +80,6 @@ export default function OverDeLessenPage() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-12 flex-wrap">
-            <Link href="/ervaringen">
-              <button className="bg-blue text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-purple transition-colors cursor-pointer w-full sm:w-auto">
-                Lees alle reviews
-              </button>
-            </Link>
             <Link href="/tarieven">
               <button className="bg-blue text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-purple transition-colors cursor-pointer w-full sm:w-auto">
                 Tijden &amp; tarieven
