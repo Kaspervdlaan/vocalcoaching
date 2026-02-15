@@ -39,7 +39,7 @@ export default function OverDeLessenPage() {
           </p>
 
           {/* Testimonial quote */}
-          <blockquote className="border-l-4 text-blue border-gold pl-6 py-2 my-4 w-[60ch] italic text-base">
+          <blockquote className="border-l-4 text-blue border-gold pl-6 py-2 my-4 max-w-[90%] md:max-w-[60ch] italic text-base">
             &ldquo;Een hele fijne docente met veel kennis, waarmee ze me veel
             heeft geleerd op zanggebied, maar ook op persoonlijke vlakken.&rdquo;
           </blockquote>

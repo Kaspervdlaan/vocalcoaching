@@ -19,9 +19,11 @@ const prozaLibre = Proza_Libre({
   display: "swap",
 });
 
-const siteUrl = "https://vocalcoachingutrecht.nl";
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://vocalcoachingutrecht.nl";
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Vocalcoaching in Utrecht - Holistische zang",
   description:
     "Zanglessen in Utrecht met Anna. Ontdek de kracht van je stem door holistische zangcoaching. Les op maat voor elk niveau — van beginner tot podium.",
