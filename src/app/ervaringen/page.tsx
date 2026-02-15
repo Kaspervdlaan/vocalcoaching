@@ -12,7 +12,7 @@ export default function ErvaringenPage() {
   return (
     <>
       {/* Page Header */}
-      <div className="py-10 md:py-12 border-b border-purple/10">
+      <div className="pt-20 md:pt-20">
         <div className="max-w-6xl mx-auto px-4 md:px-8 text-center">
           <h1 className="font-heading text-3xl md:text-4xl text-blue mb-2">
             Ervaringen

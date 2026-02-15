@@ -19,16 +19,36 @@ const prozaLibre = Proza_Libre({
   display: "swap",
 });
 
+const siteUrl = "https://vocalcoachingutrecht.nl";
+
 export const metadata: Metadata = {
   title: "Vocalcoaching in Utrecht - Holistische zang",
   description:
-    "Zanglessen in Utrecht met Anna. Ontdek de kracht van je stem door holistische zangcoaching. Voor alle niveaus.",
+    "Zanglessen in Utrecht met Anna. Ontdek de kracht van je stem door holistische zangcoaching. Les op maat voor elk niveau — van beginner tot podium.",
   keywords: "zangles, Utrecht, vocal coaching, holistische zang, zangtechniek",
   openGraph: {
-    title: "Vocalcoaching Utrecht",
-    description: "Ontdek de kracht van je stem met holistische zangcoaching in Utrecht.",
-    url: "https://vocalcoachingutrecht.nl",
+    title: "Anna Vocal Coaching — Zangles in Utrecht",
+    description:
+      "Ontdek de kracht van je stem. Holistische zangcoaching in Utrecht, les op maat voor elk niveau. Boek een proefles en laat je stem stralen.",
+    url: siteUrl,
+    siteName: "Anna Vocal Coaching",
     type: "website",
+    locale: "nl_NL",
+    images: [
+      {
+        url: `${siteUrl}/assets/Logo_Tekst.png`,
+        width: 1200,
+        height: 1200,
+        alt: "Anna Vocal Coaching — Zangles in Utrecht",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Anna Vocal Coaching — Zangles in Utrecht",
+    description:
+      "Ontdek de kracht van je stem. Holistische zangcoaching in Utrecht, les op maat voor elk niveau.",
+    images: [`${siteUrl}/assets/Logo_Tekst.png`],
   },
   icons: {
     icon: [
