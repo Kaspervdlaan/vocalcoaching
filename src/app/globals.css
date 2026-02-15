@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --purple: #350822;
+  --blue: #353C7A;
+  --red: #6B0F1A;
+  --gold: #BF8022;
+  --cream: #EDDDD4;
+}
+
+@theme inline {
+  --color-purple: var(--purple);
+  --color-blue: var(--blue);
+  --color-red: var(--red);
+  --color-gold: var(--gold);
+  --color-cream: var(--cream);
+
+  --font-heading: var(--font-eb-garamond);
+  --font-body: var(--font-proza-libre);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--cream);
+  color: var(--purple);
+  font-family: var(--font-proza-libre), "Proza Libre", sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-eb-garamond), "EB Garamond", serif;
+}
+
+/* Embla carousel */
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .embla__slide {
+    flex: 0 0 50%;
+  }
+}
