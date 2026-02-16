@@ -2,6 +2,9 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { usePathname } from "next/navigation";
+import type { MouseEvent } from "react";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 interface CTAButtonProps {
   onClick?: () => void;
@@ -9,9 +12,20 @@ interface CTAButtonProps {
 }
 
 export default function CTAButton({ onClick, variant = "default" }: CTAButtonProps) {
+  const pathname = usePathname();
   const hoverClass = variant === "header" ? "hover:bg-red" : "hover:bg-purple";
+
+  const handleClick = (event: MouseEvent<HTMLAnchorElement>) => {
+    if (pathname === "/contact") {
+      event.preventDefault();
+      scrollToTop();
+    }
+
+    onClick?.();
+  };
+
   return (
-    <Link href="/contact" onClick={onClick}>
+    <Link href="/contact" onClick={handleClick}>
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}

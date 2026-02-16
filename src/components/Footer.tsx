@@ -8,26 +8,6 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-10 md:gap-16">
           {/* Left: nav + business details */}
           <div className="text-sm text-purple/80 space-y-6 text-left">
-            <nav className="flex flex-wrap gap-x-6 gap-y-1 text-purple font-medium">
-              <Link href="/" className="hover:text-gold transition-colors">
-                Home
-              </Link>
-              <Link href="/over-de-lessen" className="hover:text-gold transition-colors">
-                Over de lessen
-              </Link>
-              <Link href="/over-anna" className="hover:text-gold transition-colors">
-                Over Anna
-              </Link>
-              <Link href="/tarieven" className="hover:text-gold transition-colors">
-                Tarieven
-              </Link>
-              <Link href="/ervaringen" className="hover:text-gold transition-colors">
-                Ervaringen
-              </Link>
-              <Link href="/contact" className="hover:text-gold transition-colors">
-                Contact
-              </Link>
-            </nav>
             <p>Ingeschreven bij handelsregister onder naam: Anna Day</p>
             <p>KVK nummer: 95255419</p>
             <p>BTW-nummer: NL005141377B75</p>

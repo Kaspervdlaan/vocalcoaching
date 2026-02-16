@@ -74,7 +74,7 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="flex-1 flex justify-center px-6 md:px-0"
           >
-            <div className="w-52 h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-2xl">
+            <div className="w-52 h-52 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-xl">
               <Image
                 src="/assets/anna-bw.png"
                 alt="Anna Day - Zangcoach en vocal coach in Utrecht"

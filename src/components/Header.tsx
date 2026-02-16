@@ -1,11 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
-import CTAButton from "./CTAButton";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 const navLinks = [
   { href: "/", label: "HOME" },
@@ -18,6 +18,14 @@ const navLinks = [
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "auto",
+    });
+  }, [pathname]);
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-purple">
@@ -41,6 +49,14 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
+                onClick={(event) => {
+                  if (!isActive) {
+                    return;
+                  }
+
+                  event.preventDefault();
+                  scrollToTop();
+                }}
                 className={`transition-colors font-body text-sm lg:text-base ${
                   isActive ? "text-gold" : "text-cream hover:text-gold"
                 }`}
@@ -100,7 +116,16 @@ export default function Header() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    onClick={() => setMobileOpen(false)}
+                    onClick={(event) => {
+                      setMobileOpen(false);
+
+                      if (!isActive) {
+                        return;
+                      }
+
+                      event.preventDefault();
+                      scrollToTop();
+                    }}
                     className={`transition-colors font-body text-lg ${
                       isActive ? "text-gold" : "text-cream hover:text-gold"
                     }`}
