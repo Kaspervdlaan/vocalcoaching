@@ -6,6 +6,7 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { scrollToTop } from "@/utils/scrollToTop";
+import CTAButton from "@/components/CTAButton";
 
 const navLinks = [
   { href: "/", label: "HOME" },
@@ -65,7 +66,7 @@ export default function Header() {
               </Link>
             );
           })}
-          {/* <CTAButton variant="header" /> */}
+          <CTAButton variant="header" />
         </nav>
 
         {/* Mobile Menu Button */}
@@ -134,7 +135,7 @@ export default function Header() {
                   </Link>
                 );
               })}
-              {/* <CTAButton variant="header" onClick={() => setMobileOpen(false)} /> */}
+              <CTAButton variant="header" onClick={() => setMobileOpen(false)} />
             </div>
           </motion.nav>
         )}

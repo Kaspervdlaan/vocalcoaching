@@ -10,7 +10,12 @@ export const metadata: Metadata = {
 const pricingData = [
   {
     title: "Studio",
-    subtitle: "Donderdag van 18:00 – 21:00 en zondag van 13:00 – 17:00",
+    address: "Lange Nieuwstraat 119, Utrecht",
+    subtitle: [
+      "Maandag 17:00–22:00",
+      "Woensdag 12:00–19:00",
+      "Donderdag 11:00–18:00",
+    ],
     prices: [
       { label: "Losse les", price: "€ 57,50" },
       { label: "Strippenkaart 6 lessen", price: "€ 330,-" },
@@ -40,10 +45,25 @@ export default function TarievenPage() {
                 key={index}
                 className="bg-white/60 rounded-xl shadow-lg p-8 border border-purple/10 hover:shadow-xl transition-shadow"
               >
-                <h2 className="font-heading text-2xl md:text-3xl text-blue mb-2">
+                <h2 className="font-heading text-2xl md:text-3xl text-blue mb-6">
                   {card.title}
+                  {"address" in card && card.address && (
+                    <>
+                      {" · "}
+                      <span className="text-purple/70 text-base font-normal">
+                        {card.address}
+                      </span>
+                    </>
+                  )}
                 </h2>
-                <p className="text-purple/70 text-sm mb-6">{card.subtitle}</p>
+                <p className="text-purple/70 text-sm mb-6">
+                  {card.subtitle.map((line, i) => (
+                    <span key={i}>
+                      {line}
+                      {i < card.subtitle.length - 1 && <br />}
+                    </span>
+                  ))}
+                </p>
 
                 <div className="flex flex-col gap-4">
                   {card.prices.map((item, i) => (

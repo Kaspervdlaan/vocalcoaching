@@ -28,18 +28,29 @@ export default function JsonLd() {
       url: `${siteUrl}/over-anna`,
     },
     serviceType: ["Zangles", "Vocal coaching", "Zangcoaching"],
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Lange Nieuwstraat 119",
+      addressLocality: "Utrecht",
+    },
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Thursday"],
-        opens: "18:00",
-        closes: "21:00",
+        dayOfWeek: ["Monday"],
+        opens: "17:00",
+        closes: "22:00",
       },
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Sunday"],
-        opens: "13:00",
-        closes: "17:00",
+        dayOfWeek: ["Wednesday"],
+        opens: "12:00",
+        closes: "19:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Thursday"],
+        opens: "11:00",
+        closes: "18:00",
       },
     ],
   };

@@ -44,9 +44,9 @@ export default function OverDeLessenPage() {
             heeft geleerd op zanggebied, maar ook op persoonlijke vlakken.&rdquo;
           </blockquote>
 
-          <div className="flex justify-center">
+          <div className="flex justify-start">
             <Link href="/ervaringen">
-              <button className="bg-blue text-cream font-heading text-lg px-6 py-3 rounded-lg shadow-md hover:bg-purple transition-colors cursor-pointer w-auto">
+              <button className="bg-transparent border-2 border-blue text-blue font-heading text-lg px-4 py-2 rounded-lg hover:bg-blue hover:text-cream transition-colors cursor-pointer w-auto">
                 Lees alle reviews
               </button>
             </Link>

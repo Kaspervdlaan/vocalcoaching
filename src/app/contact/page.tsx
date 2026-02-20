@@ -48,6 +48,9 @@ export default function ContactPage() {
                   Anna.vocalcoaching@gmail.com
                 </a>
               </p>
+              <p className="text-purple text-base mt-2">
+                Locatie: Lange Nieuwstraat 119, Utrecht
+              </p>
               <div className="flex items-center gap-5 mt-4">
                 <a
                   href="https://www.instagram.com/st.annaday/"
