@@ -10,16 +10,15 @@ export const metadata: Metadata = {
 const pricingData = [
   {
     title: "Studio",
-    address: "Lange Nieuwstraat 119, Utrecht",
+    address: "Lange Nieuwstraat 237, Utrecht",
     subtitle: [
       "Maandag 17:00–22:00",
       "Woensdag 12:00–19:00",
       "Donderdag 11:00–18:00",
     ],
     prices: [
-      { label: "Losse les", price: "€ 57,50" },
-      { label: "Strippenkaart 6 lessen", price: "€ 330,-" },
-      { label: "Strippenkaart 10 lessen", price: "€ 550,-" },
+      { label: "Losse les", price: "€ 52,50" },
+      { label: "Strippenkaart 6 lessen", price: "€ 300,-" },
     ],
   },
 ];
