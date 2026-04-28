@@ -35,7 +35,8 @@ export default function ContactPage() {
                 ik kom zo snel mogelijk bij je terug!
               </p>
               <p className="text-purple text-base leading-relaxed mb-6">
-                Een proefles duurt, net als een reguliere les, 45 minuten.
+                Een proefles duurt net als een reguliere les 45 minuten, maar
+                kost €40,- omdat we ook wat tijd besteden aan de kennismaking.
                 Tijdens een proefles vind ik het belangrijk om elkaar eerst
                 even te leren kennen, zodat jij kan kijken of er een klik is
                 voordat we aan de slag gaan.
@@ -49,7 +50,7 @@ export default function ContactPage() {
                 </a>
               </p>
               <p className="text-purple text-base mt-2">
-                Locatie: Lange Nieuwstraat 119, Utrecht
+                Locatie: Lange Nieuwstraat 237, Utrecht
               </p>
               <div className="flex items-center gap-5 mt-4">
                 <a
